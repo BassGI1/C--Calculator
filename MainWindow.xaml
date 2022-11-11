@@ -1,0 +1,55 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="350">
+    <Grid Background="DarkKhaki">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Grid.ColumnSpan="5" Grid.Row="1" Background="Azure" Margin="0,0,0,8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="1" Background="Transparent" Text="" FontSize="65" TextAlignment="right" Margin="5, 0, 5, 0" x:Name="Answer"/>
+        </Grid>
+        <Button Grid.Column="1" Grid.Row="2" Margin="2" Background="Black" Foreground="white" Content="7" FontSize="22.5" x:Name="but7"/>
+        <Button Grid.Column="2" Grid.Row="2" Margin="2" Background="Black" Foreground="white" Content="8" FontSize="22.5" x:Name="but8"/>
+        <Button Grid.Column="3" Grid.Row="2" Margin="2" Background="Black" Foreground="white" Content="9" FontSize="22.5" x:Name="but9"/>
+        <Button Grid.Column="4" Grid.Row="2" Margin="2" Background="Black" Foreground="white" Content="/" FontSize="22.5" x:Name="butDiv"/>
+        <Button Grid.Column="5" Grid.Row="2" Margin="2" Background="Black" Foreground="white" Content="*" FontSize="22.5" x:Name="butMul"/>
+        <Button Grid.Column="1" Grid.Row="3" Margin="2" Background="Black" Foreground="white" Content="4" FontSize="22.5" x:Name="but4"/>
+        <Button Grid.Column="2" Grid.Row="3" Margin="2" Background="Black" Foreground="white" Content="5" FontSize="22.5" x:Name="but5"/>
+        <Button Grid.Column="3" Grid.Row="3" Margin="2" Background="Black" Foreground="white" Content="6" FontSize="22.5" x:Name="but6"/>
+        <Button Grid.Column="4" Grid.Row="3" Margin="2" Background="Black" Foreground="white" Content="+" FontSize="22.5" x:Name="butPlus"/>
+        <Button Grid.Column="5" Grid.Row="3" Margin="2" Background="Black" Foreground="white" Content="-" FontSize="22.5" x:Name="butMinus"/>
+        <Button Grid.Column="1" Grid.Row="4" Margin="2" Background="Black" Foreground="white" Content="1" FontSize="22.5" x:Name="but1"/>
+        <Button Grid.Column="2" Grid.Row="4" Margin="2" Background="Black" Foreground="white" Content="2" FontSize="22.5" x:Name="but2"/>
+        <Button Grid.Column="3" Grid.Row="4" Margin="2" Background="Black" Foreground="white" Content="3" FontSize="22.5" x:Name="but3"/>
+        <Button Grid.Column="4" Grid.Row="4" Margin="2" Background="Black" Foreground="white" Content="^" FontSize="22.5" x:Name="butPow"/>
+        <Button Grid.Column="5" Grid.Row="4" Margin="2" Background="Black" Foreground="white" Content="+/-" FontSize="22.5" x:Name="butNeg"/>
+        <Button Grid.Column="1" Grid.Row="5" Margin="2" Grid.ColumnSpan="2" Background="Black" Foreground="white" Content="0" FontSize="22.5" x:Name="but0"/>
+        <Button Grid.Column="3" Grid.Row="5" Margin="2" Background="Black" Foreground="white" Content="." FontSize="22.5" x:Name="butDec"/>
+        <Button Grid.Column="4" Grid.Row="5" Margin="2" Background="Black" Foreground="white" Content="del" FontSize="22.5" x:Name="butDel"/>
+        <Button Grid.Column="5" Grid.Row="5" Margin="2" Background="Black" Foreground="white" Content="=" FontSize="22.5" x:Name="butEqu"/>
+    </Grid>
+</Window>
